@@ -1,0 +1,9 @@
+.warning{
+    height: 30px;
+    background: #454F5B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 100px;
+}
