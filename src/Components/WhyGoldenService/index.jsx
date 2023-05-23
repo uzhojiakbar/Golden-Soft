@@ -17,7 +17,7 @@ const WhyGoldenService = () => {
             <Why>
                 {
                     WhyItems.map((v)=>{
-                        return <WhyItem>
+                        return <WhyItem key={v.id} >
                             <img src={v.img} alt="" />
                             <div className="desc">
                                 {v.name}

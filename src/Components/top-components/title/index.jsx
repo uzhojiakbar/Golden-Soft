@@ -1,9 +1,11 @@
 import React from 'react'
 import { TitleDS } from './style'
 
-const Title = ({title,align,fsz,color}) => {
+const Title = ({width,margin, title, align, fsz, color, fw }) => {
   return (
-    <TitleDS fsz={fsz} color={color} align={align} >{title}</TitleDS>
+    <TitleDS margin={margin} width={width} fsz={fsz} fw={fw} color={color} align={align}>
+      {title}
+    </TitleDS>
   )
 }
 

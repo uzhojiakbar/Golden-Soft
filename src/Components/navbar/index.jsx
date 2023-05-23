@@ -19,6 +19,7 @@ const Navbar = () => {
                     {
                         pages.map((v) => {
                             return <NavLink
+                                key={v.id}
                                 className={({ isActive }) => isActive ? 'active navlink' : 'navlink'}
                                 to={v.path}
                             >
@@ -33,15 +34,15 @@ const Navbar = () => {
                 <NavRight>
                     <div className="tel in-nav-right ">
                         <a href="tel:+998933452427" className='tel in-nav-right'>
-                            <i class="fa-solid fa-phone  in-nav-logo tel-logo  "></i>
+                            <i className="fa-solid fa-phone  in-nav-logo tel-logo  "></i>
                             +998 93 345 24 27
                         </a>
                     </div>
                     <NavLink className="link in-nav-right " to={'futured'}>
-                        <i class="fa-solid fa-heart in-nav-logo "></i>
+                        <i className="fa-solid fa-heart in-nav-logo "></i>
                     </NavLink>
                     <NavLink className="link in-nav-right " to={'shop'}>
-                        <i class="fa-solid fa-cart-shopping in-nav-logo "></i>
+                        <i className="fa-solid fa-cart-shopping in-nav-logo "></i>
                     </NavLink>
                 </NavRight>
 

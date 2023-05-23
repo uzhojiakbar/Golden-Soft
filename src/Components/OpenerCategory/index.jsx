@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import { categoryMix } from '../../Mock/category-mix'
+import { Products } from '../../Mock/Products'
 import Title from '../top-components/title'
 import { CateforyMixCon, CateforyMixItem, OpenerDesign } from './styled'
 
@@ -11,8 +11,8 @@ const OpenerCategory = () => {
             <Title title='Категории' />
             <CateforyMixCon>
                 {
-                    categoryMix.map((v)=>{
-                        return <CateforyMixItem>
+                    Products.slice(0,4).map((v)=>{
+                        return <CateforyMixItem key={v.id} >
                             <div className="info">
                                 <div className="dlya">{v.info.dlya}</div>
                                 <button onClick={()=>navigate(`category?ctg=${v.info.dlya}`)} >Перейти</button>
